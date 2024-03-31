@@ -1,23 +1,23 @@
 import Image from "../assets/baltha.avif";
+import './_home.scss';
 import { Link } from "react-router-dom";
-
 
 export const Home = () => {
   return (
     <>
-      <main className="flex h-screen">
-        <article className="one">
-          <img src={Image} alt="" />
-          <h1>BALTHAZAR GONZALEZ LOUREIRO</h1>
-          <h2>FRONT-END DEVELOPER</h2>
-          <a className="one-button-link" href="mailto:Balthagonzalez24@gmail.com">
-            <button>
+      <main className="flex h-screen bg-[rgb(51,51,51)]">
+        <article className="h-full text-[rgb(232,232,232)] w-1/2 flex justify-center items-center flex-col">
+          <img className="size-1/2 rounded-lg" src={Image} alt="" />
+          <h1 className="mt-16 text-center">BALTHAZAR GONZALEZ LOUREIRO</h1>
+          <h2 className="m-8 text-2xl">FRONT-END DEVELOPER</h2>
+          <a href="mailto:Balthagonzalez24@gmail.com">
+            <button className="bg-[rgb(232,232,232)] text-[rgb(51,51,51)] cursor-pointer mx-2 my-0 px-8 py-4 rounded-lg">
               <strong>¡TRABAJEMOS JUNTOS!</strong>
             </button>
           </a>
-          <div>
+          <div className="m-4">
             <a
-              className="linkedin"
+              className="fill-[rgb(232,232,232)] m-4 w-8 block"
               target="_blank"
               href="https://www.linkedin.com/in/balthazargonzalezlou/"
             >
@@ -26,7 +26,7 @@ export const Home = () => {
               </svg>
             </a>
             <a
-              className="github"
+              className="fill-[rgb(232,232,232)] m-4 w-8 block"
               target="_blank"
               href="https://github.com/BalthaGonzalez"
             >
@@ -36,25 +36,29 @@ export const Home = () => {
             </a>
           </div>
         </article>
-        <article className="two">
+        <article className="px-24 bg-[rgb(232,232,232)] h-full w-1/2 flex justify-center items-center flex-col text-center px-16">
           <h1>SOBRE MÍ</h1>
-          <p>
-            Soy desarrollador y diseñador web, interesado en lenguajes y frameworks
-            front-end.
+          <p className="mt-12">
+            Me especializo en diseño de contenidos web, trabajé durante varios años en una compañía de servicios de salud como director de redes sociales, también tengo participación en proyectos de desarrollo web orientado al front-end.
           </p>
-          <p>
-            Me especializo en diseño de contenidos web, trabajé durante 3 años en una
-            empresa de servicios de salud como director de redes sociales y colaboré
-            en algunos proyectos de desarrollo web.
+          <p className="p-8">
+            Cuento con las habilidades necesarias para adaptarme a un grupo de trabajo formado, creo firmemente que el proceso para llegar a un mismo objetivo, se da cuando se comparten ideas y se mantiene un entorno laboral positivo.
           </p>
-          <div className="button-link">
-            <Link to={`cv`}><button>CV</button></Link>
-            <Link to={`portafolio`}><button>PORTAFOLIO</button></Link>
+          <p className="mb-12">
+            Estoy en un proceso continuo de crecimiento y aprendizaje, que implica la mejoría en un aspecto fundamental de mi vida, la pasión por la computación y el enfoque a la creación de sistemas para mejorar la experiencia de otras personas.
+          </p>
+          <div>
+            <Link to={`cv`}>
+              <button class="m-1 relative h-12 overflow-hidden rounded bg-neutral-950 px-5 py-2.5 text-white transition-all duration-300 hover:bg-neutral-800 hover:ring-2 hover:ring-neutral-800 hover:ring-offset-2">
+                <span class="relative">CV</span>
+              </button></Link>
+            <Link to={`portafolio`}>
+              <button class="m-1 relative h-12 overflow-hidden rounded bg-neutral-950 px-5 py-2.5 text-white transition-all duration-300 hover:bg-neutral-800 hover:ring-2 hover:ring-neutral-800 hover:ring-offset-2">
+                <span class="relative">PORTAFOLIO</span>
+              </button></Link>
           </div>
         </article>
       </main >
     </>
   )
 }
-
-

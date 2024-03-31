@@ -1,12 +1,13 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import './index.scss'
+import "./normalize.css";
+
 import { Home } from './pages/Home'
-import ErrorPage from "./error-page"
-import {
-  createBrowserRouter,
-  RouterProvider,
-} from "react-router-dom";
+import { Cv } from './pages/Cv'
+import { Portafolio } from './pages/Portafolio'
+import ErrorPage from "./pages/error-page"
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 const router = createBrowserRouter([
   {
@@ -16,12 +17,12 @@ const router = createBrowserRouter([
   },
   {
     path: "/portafolio",
-    element: <Home />,
+    element: <Portafolio />,
     errorElement: <ErrorPage />
   },
   {
     path: "/cv",
-    element: <Home />,
+    element: <Cv />,
     errorElement: <ErrorPage />
   }
 ]);
