@@ -1,0 +1,57 @@
+@use "sass:map";
+
+$bgl-colors: (
+    white: #f6f6f6,
+    special: #e8e8e8,
+    gray: #333333,
+    red: #990100,
+    super: #b90504,
+);
+
+$neutral-colors: (
+    white: #ffffff,
+    black: #000000,
+);
+
+// BGL Background Colors
+.u-bgcolor-bgl-white {
+    background-color: map-get($bgl-colors, white);
+}
+
+.u-bgcolor-bgl-special {
+    background-color: map-get($bgl-colors, special);
+}
+
+.u-bgcolor-bgl-gray {
+    background-color: map-get($bgl-colors, gray);
+}
+
+.u-bgcolor-bgl-red {
+    background-color: map-get($bgl-colors, red);
+}
+
+.u-bgcolor-bgl-super {
+    background-color: map-get($bgl-colors, super);
+}
+
+
+// BGL Colors
+.u-color-bgl-white {
+    color: map-get($bgl-colors, white);
+}
+
+.u-color-bgl-special {
+    color: map-get($bgl-colors, special);
+}
+
+.u-color-bgl-gray {
+    color: map-get($bgl-colors, gray);
+}
+
+.u-color-bgl-red {
+    color: map-get($bgl-colors, red);
+}
+
+.u-color-bgl-super {
+    color: map-get($bgl-colors, super);
+}
