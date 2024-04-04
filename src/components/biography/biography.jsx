@@ -1,5 +1,3 @@
-import { Link } from "react-router-dom";
-
 export default function biography() {
     return (
         <article className="m-10 flex-col justify-center items-center text-center">
@@ -13,15 +11,5 @@ export default function biography() {
             <p className="mb-12">
                 Estoy en un proceso continuo de crecimiento y aprendizaje, que implica la mejoría en un aspecto fundamental de mi vida, la pasión por la computación y el enfoque a la creación de sistemas para mejorar la experiencia de otras personas.
             </p>
-            <div>
-                <Link to={`cv`}>
-                    <button class="m-1 relative h-12 overflow-hidden rounded bg-neutral-950 px-5 py-2.5 text-white transition-all duration-300 hover:ring-2 hover:ring-neutral-800 hover:ring-offset-2">
-                        <span class="relative">CV</span>
-                    </button></Link>
-                <Link to={`portafolio`}>
-                    <button class="m-1 relative h-12 overflow-hidden rounded bg-neutral-950 px-5 py-2.5 text-white transition-all duration-300 hover:ring-2 hover:ring-neutral-800 hover:ring-offset-2">
-                        <span class="relative">PORTAFOLIO</span>
-                    </button></Link>
-            </div>
         </article>)
 }

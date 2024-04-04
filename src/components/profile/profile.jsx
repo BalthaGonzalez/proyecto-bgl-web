@@ -1,12 +1,7 @@
-import Image from '../../assets/baltha.avif';
-
 export default function profile() {
     return (
-        <article className="flex justify-around m-36 p-10 rounded-lg shadow-2xl hover:shadow-black">
-            <section>
-                <img className="size-96 rounded-lg" src={Image} alt="" />
-            </section>
-            <section className='content-center text-center text-xl'>
+        <article className="flex justify-around m-20 p-10 rounded-lg shadow-2xl hover:shadow-black">
+            <section className='content-center text-center text-sm'>
                 <h1>BALTHAZAR GONZALEZ LOUREIRO</h1>
                 <h2 className="m-6">FRONT-END DEVELOPER</h2>
                 <a href="mailto:Balthagonzalez24@gmail.com">
@@ -38,3 +33,5 @@ export default function profile() {
         </article>
     )
 }
+
+
