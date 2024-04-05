@@ -1,7 +1,16 @@
-section {
+@use "sass:map";
+@use "./../../colors.scss";
+
+nav {
     font-family: "Nunito", sans-serif;
 
+
     & button {
-        font-size: 20PX;
+        font-size: 16px;
+        color: map.get(colors.$bgl-colors, white);
+
+        &::after {
+            background-color: map.get(colors.$bgl-colors, white);
+        }
     }
 }

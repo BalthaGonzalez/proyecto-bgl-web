@@ -1,17 +1,21 @@
+import './_profile.scss';
+
 export default function profile() {
     return (
-        <article className="flex justify-around m-20 p-10 rounded-lg shadow-2xl hover:shadow-black">
-            <section className='content-center text-center text-sm'>
-                <h1>BALTHAZAR GONZALEZ LOUREIRO</h1>
-                <h2 className="m-6">FRONT-END DEVELOPER</h2>
+        <article className="card flex justify-around m-20 p-10 rounded-lg">
+            <section className='content-center text-center'>
+                <div className='title u-color-bgl-white'>
+                    <h1>BALTHAZAR GONZALEZ LOUREIRO</h1>
+                    <h2 className="m-4">FRONT-END DEVELOPER</h2>
+                </div>
                 <a href="mailto:Balthagonzalez24@gmail.com">
-                    <button className="bg-[rgb(232,232,232)] text-[rgb(51,51,51)] cursor-pointer mx-2 my-0 px-8 py-4 rounded-lg">
+                    <button className="button u-bgcolor-bgl-white u-color-bgl-gray cursor-pointer m-2 p-4 rounded-lg">
                         <strong>¡TRABAJEMOS JUNTOS!</strong>
                     </button>
                 </a>
-                <div className="flex justify-center m-4">
+                <div className="flex justify-center my-4">
                     <a
-                        className="fill-[rgb(232,232,232)] m-4 w-8 block"
+                        className="m-4 w-8 block"
                         target="_blank"
                         href="https://www.linkedin.com/in/balthazargonzalezlou/"
                     >
@@ -20,7 +24,7 @@ export default function profile() {
                         </svg>
                     </a>
                     <a
-                        className="fill-[rgb(232,232,232)] m-4 w-8 block"
+                        className="m-4 w-8 block"
                         target="_blank"
                         href="https://github.com/BalthaGonzalez"
                     >

@@ -1,3 +1,23 @@
+@use "sass:map";
+@use "./../../colors.scss";
+
+.mainContainer__wrapper {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(https://humanidades.com/wp-content/uploads/2018/10/estrellas-1-e1581020345508-800x416.jpg);
+}
+
 .mainContainer {
-    min-height: 100vh;
+    height: 80%;
+    background-color: map.get(colors.$bgl-colors, gray);
+    border-radius: 8px;
+    background: rgba(72, 146, 108, 0.08);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(2.8px);
+    -webkit-backdrop-filter: blur(2.8px);
+    border: 1px solid rgba(72, 146, 108, 0.14);
+
 }

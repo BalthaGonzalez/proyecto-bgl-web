@@ -1,0 +1,44 @@
+@use "sass:map";
+@use "../../colors.scss";
+
+@mixin animate-opacity($duration, $delay) {
+    animation: mymove $duration ease-out $delay;
+}
+
+@mixin keyframes-opacity {
+    @keyframes mymove {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+}
+
+.title {
+    position: relative;
+    @include animate-opacity(1s, 0s);
+}
+
+.button {
+    position: relative;
+    @include animate-opacity(1.5s, 0s);
+}
+
+svg path {
+    fill: map.get(colors.$bgl-colors, white);
+    position: relative;
+    @include animate-opacity(2s, 0s);
+}
+
+@include keyframes-opacity;
+
+.card {
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+
+    &:hover {
+        box-shadow: 0 3px 6px map.get(colors.$bgl-colors, white), 0 3px 6px map.get(colors.$bgl-colors, white);
+    }
+}
