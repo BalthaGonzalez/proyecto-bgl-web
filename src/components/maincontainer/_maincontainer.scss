@@ -6,23 +6,22 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(https://t4.ftcdn.net/jpg/04/85/69/33/360_F_485693313_SgtIBVmDIvjeMhjkmzv7sAu83qd1Iokd.jpg);
+    width: 100%;
+    background-size: cover;
+    background-image: url(../../assets/bg-stars.png);
 }
 
-
-
 .mainContainer {
+    font-family: "Nunito", sans-serif;
     height: 100%;
     max-height: 60vh;
-    width: 50vw;
+    width: 70vw;
     display: flex;
     align-items: center;
     justify-items: center;
     flex-direction: column;
-    background: rgba(72, 146, 108, 0.08);
     border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(2.8px);
-    -webkit-backdrop-filter: blur(2.8px);
-    border: 1px solid rgba(72, 146, 108, 0.14);
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.2) 0px 15px 12px;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
 }
