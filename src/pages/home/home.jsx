@@ -1,9 +1,9 @@
-import Profile from '../../components/profile/profile'
-
-import './_home.scss';
+import Profile from '../../components/profile/profile';
 
 export const Home = () => {
   return (
-    <Profile />
+    <div className='h-full flex items-center'>
+      < Profile />
+    </div>
   )
 }

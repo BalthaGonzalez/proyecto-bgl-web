@@ -1,6 +1,8 @@
+import './_biography.scss';
+
 export default function biography() {
     return (
-        <article className="m-10 flex-col justify-center items-center text-center">
+        <article className='texto px-20'>
             <h1>SOBRE MÍ</h1>
             <p className="mt-12">
                 Me especializo en diseño de contenidos web, trabajé durante varios años en una compañía de servicios de salud como director de redes sociales, también tengo participación en proyectos de desarrollo web orientado al front-end.
@@ -11,5 +13,6 @@ export default function biography() {
             <p className="mb-12">
                 Estoy en un proceso continuo de crecimiento y aprendizaje, que implica la mejoría en un aspecto fundamental de mi vida, la pasión por la computación y el enfoque a la creación de sistemas para mejorar la experiencia de otras personas.
             </p>
-        </article>)
+        </article>
+    )
 }

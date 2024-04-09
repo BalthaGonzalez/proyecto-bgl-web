@@ -1,0 +1,10 @@
+@use "sass:map";
+@use "../../colors.scss";
+
+.texto {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: map.get(colors.$bgl-colors, white);
+}

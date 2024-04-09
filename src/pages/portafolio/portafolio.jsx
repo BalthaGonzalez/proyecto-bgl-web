@@ -1,9 +1,7 @@
-import Header from '../../components/header/header';
-
 export const Portafolio = () => {
     return (
-        <>
-            <h1 className='text-4xl pb-4'>Dale boca</h1>
-        </>
+        <div className='h-full flex items-center'>
+            <h1 className='text-center u-color-bgl-white'>Portafolio</h1>
+        </div>
     )
 }
