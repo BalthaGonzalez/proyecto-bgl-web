@@ -8,11 +8,10 @@ export default function profile() {
                 <h2 className="m-4">FRONT-END DEVELOPER</h2>
             </div>
             <a href="mailto:Balthagonzalez24@gmail.com">
-                <button className="button u-bgcolor-bgl-white u-color-bgl-gray cursor-pointer m-2 p-4 rounded-lg">
-                    <strong>¡TRABAJEMOS JUNTOS!</strong>
-                </button>
+                <button className="button u-color-bgl-white border rounded-lg p-4 m-4">
+                    ¡TRABAJEMOS JUNTOS!</button>
             </a>
-            <div className="flex justify-center my-4">
+            <div className="flex justify-center">
                 <a
                     className="m-4 w-8 block"
                     target="_blank"

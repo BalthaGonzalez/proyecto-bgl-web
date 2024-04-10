@@ -1,11 +1,14 @@
 @use "sass:map";
 @use "./../../colors.scss";
 
-button {
-    font-size: 16px;
-    color: map.get(colors.$bgl-colors, white);
+.navbuttons {
 
-    &::after {
+    & button {
+        font-size: 20px;
+        color: map.get(colors.$bgl-colors, white);
+    }
+
+    & ::after {
         background-color: map.get(colors.$bgl-colors, white);
     }
 }

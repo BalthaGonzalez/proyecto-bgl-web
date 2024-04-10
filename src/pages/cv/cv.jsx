@@ -6,9 +6,6 @@ export const Cv = () => {
         <div className='h-full flex items-center'>
             <div className='flex flex-col justify-center'>
                 < Biography />
-                <div className='btn__wrapper flex justify-center w-full'>
-                    < Alertbutton />
-                </div>
             </div>
         </div>
     )

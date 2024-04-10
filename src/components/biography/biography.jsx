@@ -1,3 +1,5 @@
+import Alertbutton from '../alertbutton/alertbutton';
+
 import './_biography.scss';
 
 export default function biography() {
@@ -13,6 +15,9 @@ export default function biography() {
             <p className="mb-12">
                 Estoy en un proceso continuo de crecimiento y aprendizaje, que implica la mejoría en un aspecto fundamental de mi vida, la pasión por la computación y el enfoque a la creación de sistemas para mejorar la experiencia de otras personas.
             </p>
+            <div className='alertbutton'>
+                < Alertbutton />
+            </div>
         </article>
     )
 }

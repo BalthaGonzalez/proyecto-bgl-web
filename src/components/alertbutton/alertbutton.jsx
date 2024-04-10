@@ -10,9 +10,9 @@ export default function Alertbutton() {
     return (
 
         <a href="../src/assets/Curriculum-Vitae.pdf" target="_blank" rel="noopener noreferrer">
-            <AlertButton message="Visualizar Curriculum Vitae">
-                <button className="m-1 relative h-12 overflow-hidden rounded bg-neutral-950 px-5 py-2.5 text-white transition-all duration-300 hover:ring-2 hover:ring-neutral-800 hover:ring-offset-2">
-                    <span className="relative">CV</span>
+            <AlertButton message="Abrir en otra pestaña.">
+                <button className="u-color-bgl-white border rounded-lg p-4 ">
+                    <span className="relative">CURRICULUM VITAE</span>
                 </button>
             </AlertButton>
         </a>

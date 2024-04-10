@@ -27,11 +27,17 @@
 
 .texto {
     position: relative;
-    @include animate-opacity(1s, 0s);
+    @include animate-opacity(1.5s, 0s);
 
     & p {
         position: relative;
-        @include animate-opacity(1.5s, 0s);
+        @include animate-opacity(2s, 0s);
+    }
+
+    .alertbutton {
+        fill: map.get(colors.$bgl-colors, white);
+        position: relative;
+        @include animate-opacity(2.5s, 0s);
     }
 }
 
