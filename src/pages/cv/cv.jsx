@@ -1,5 +1,4 @@
-import Biography from '../../components/biography/biography';
-import Alertbutton from '../../components/alertbutton/alertbutton';
+import Biography from '../../components/biography/biography'
 
 export const Cv = () => {
     return (

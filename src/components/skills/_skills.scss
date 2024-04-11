@@ -19,31 +19,27 @@
 
 @include keyframes-opacity;
 
-.titlep {
-    position: relative;
+.portafolio {
     @include animate-opacity(1.5s, 0s);
 }
 
-.skillssvg {
-    text-align: center;
-    color: map.get(colors.$bgl-colors, white);
-    @include animate-opacity(2s, 0s);
 
-    & ol {
-        display: flex;
-        justify-content: center;
-    }
+.skillssvg ol {
+    display: flex;
+    padding-bottom: 1rem;
 
     & li {
         display: flex;
-        padding: 0 1rem;
-        flex-direction: column;
         align-items: center;
+        flex-direction: column;
+        padding: 0 1rem;
+        color: map.get(colors.$bgl-colors, white);
+        @include animate-opacity(2s, 0s);
 
         & svg {
             width: 48px;
             height: 48px;
-            margin-bottom: 1rem;
+            margin: 1rem;
             fill: map.get(colors.$bgl-colors, white);
             transition: all 0.2s ease;
 
