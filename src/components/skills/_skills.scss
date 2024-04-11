@@ -1,0 +1,55 @@
+@use "sass:map";
+@use "../../colors.scss";
+
+@mixin animate-opacity($duration, $delay) {
+    animation: mymove $duration ease-out $delay;
+}
+
+@mixin keyframes-opacity {
+    @keyframes mymove {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+}
+
+@include keyframes-opacity;
+
+.titlep {
+    position: relative;
+    @include animate-opacity(1.5s, 0s);
+}
+
+.skillssvg {
+    text-align: center;
+    color: map.get(colors.$bgl-colors, white);
+    @include animate-opacity(2s, 0s);
+
+    & ol {
+        display: flex;
+        justify-content: center;
+    }
+
+    & li {
+        display: flex;
+        padding: 0 1rem;
+        flex-direction: column;
+        align-items: center;
+
+        & svg {
+            width: 48px;
+            height: 48px;
+            margin-bottom: 1rem;
+            fill: map.get(colors.$bgl-colors, white);
+            transition: all 0.2s ease;
+
+            &:hover {
+                transform: scale(1.5);
+            }
+        }
+    }
+}

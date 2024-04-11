@@ -8,7 +8,7 @@
     align-items: center;
     width: 100%;
     background-size: cover;
-    background-image: url(../../assets/bg-stars.png);
+    background-image: url(../../assets/bg-stars.avif);
 }
 
 .mainContainer {
@@ -27,9 +27,16 @@
 
     & h1 {
         font-size: 36px;
+        color: map.get(colors.$bgl-colors, white);
     }
 
     & h2 {
         font-size: 30px;
+        color: map.get(colors.$bgl-colors, white);
+    }
+
+    & h3 {
+        font-size: 24px;
+        color: map.get(colors.$bgl-colors, white);
     }
 }

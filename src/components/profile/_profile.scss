@@ -22,15 +22,18 @@
     @include animate-opacity(1.5s, 0s);
 }
 
-.button {
+.workbutton {
     position: relative;
     @include animate-opacity(2s, 0s);
 }
 
-svg path {
-    fill: map.get(colors.$bgl-colors, white);
-    position: relative;
-    @include animate-opacity(2.5s, 0s);
+.worksvg {
+
+    & svg {
+        fill: map.get(colors.$bgl-colors, white);
+        position: relative;
+        @include animate-opacity(2.5s, 0s);
+    }
 }
 
 @include keyframes-opacity;
