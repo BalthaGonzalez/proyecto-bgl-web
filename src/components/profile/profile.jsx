@@ -7,10 +7,6 @@ export default function profile() {
                 <h1 className='mb-8'>BALTHAZAR GONZALEZ LOUREIRO</h1>
                 <h2 className="mb-6">FRONT-END DEVELOPER</h2>
             </div>
-            <a href="mailto:Balthagonzalez24@gmail.com">
-                <button className="workbutton u-color-bgl-white border rounded-lg p-4 mb-4">
-                    ¡TRABAJEMOS JUNTOS!</button>
-            </a>
             <div className="worksvg flex justify-center">
                 <a
                     className="m-4 w-8 block"

@@ -32,15 +32,6 @@
             white 20%,
             white 80%,
             transparent);
-
-    &:hover .scroller__inner {
-        -webkit-animation-play-state: paused;
-        -moz-animation-play-state: paused;
-        -o-animation-play-state: paused;
-        animation-play-state: paused;
-        cursor: pointer;
-    }
-
 }
 
 .scroller__inner {
